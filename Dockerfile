@@ -8,5 +8,4 @@ WORKDIR /ShinyEmerald
 
 RUN npm install
 RUN npm build 
-
 CMD npm preview
