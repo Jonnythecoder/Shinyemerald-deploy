@@ -6,7 +6,7 @@ RUN git clone --depth=1 https://github.com/Templates-dude/ShinyEmerald.git
 
 WORKDIR /ShinyEmerald
 
-RUN pnpm install
-RUN pnpm build 
+RUN npm install
+RUN npm build 
 
-CMD pnpm preview
+CMD npm preview
