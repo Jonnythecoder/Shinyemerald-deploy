@@ -10,4 +10,4 @@ RUN npm install
 
 RUN npm run build 
 
-CMD npm preview
+CMD npm run preview
