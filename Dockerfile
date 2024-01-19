@@ -2,10 +2,11 @@ FROM node:20-alpine
 
 RUN apk add --no-cache git
 
-RUN git clone --depth=1 https://github.com/Templates-dude/inenter.git
+RUN git clone --depth=1 https://github.com/Templates-dude/ShinyEmerald.git
 
-WORKDIR /inenter
+WORKDIR /ShinyEmerald
 
-RUN npm install
+RUN pnpm install
+RUN pnpm build 
 
-CMD npm start
+CMD pnpm preview
